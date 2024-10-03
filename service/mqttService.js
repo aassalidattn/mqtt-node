@@ -3,7 +3,7 @@ const mqtt = require("mqtt");
 class MQTTService {
   constructor(host, messageCallback) {
     this.mqttClient = null;
-    this.host = host;
+    this.host = "mqtt://129.204.184.204:1883";
     this.messageCallback = messageCallback;
   }
 
